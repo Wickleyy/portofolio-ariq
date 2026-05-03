@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================================
+   TWEAK GOOGLE TRANSLATE WIDGET
+   ========================================= */
+
+/* Menyembunyikan banner atas Google Translate yang sering merusak layout */
+.vi-auto { display: none !important; }
+.skiptranslate iframe { display: none !important; }
+body { top: 0px !important; }
+
+/* Menyembunyikan logo Google dan teks "Powered by" */
+.goog-logo-link { display: none !important; }
+.goog-te-gadget { 
+  color: transparent !important; 
+  font-size: 0px !important; 
+}
+
+/* Mengatur ulang gaya kotak dropdown (select) agar estetik */
+.goog-te-gadget .goog-te-combo {
+  margin: 0 !important;
+  padding: 6px 10px !important;
+  border-radius: 8px !important;
+  background-color: transparent !important;
+  border: 1px solid #cbd5e1 !important; /* warna slate-300 */
+  color: #334155 !important; /* warna slate-700 */
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  outline: none !important;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Efek saat dropdown di-klik */
+.goog-te-gadget .goog-te-combo:focus {
+  border-color: #94a3b8 !important; /* slate-400 */
+  box-shadow: 0 0 0 2px rgba(241, 245, 249, 0.5) !important;
+}
+
+/* Sembunyikan banner biru dari Google Translate */
+body { top: 0 !important; }
+.skiptranslate > iframe.skiptranslate { display: none !important; }
