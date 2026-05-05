@@ -42,7 +42,7 @@ const About = () => {
             <p>
               Selain pengembangan aplikasi, saya juga sangat tertarik dengan bidang <b>Data Science</b>. Saya terbiasa menerapkan metode statistik menggunakan Python untuk menganalisis dataset dan membangun <b>model machine learning</b>.
             </p>
-            <p className="font-medium text-slate-800">
+            <p>
               Saat ini saya terbuka untuk peluang magang di mana saya dapat berkontribusi menggunakan keahlian saya di bidang rekayasa perangkat lunak maupun analisis data.
             </p>
           </div>

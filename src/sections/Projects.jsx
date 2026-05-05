@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Code } from 'lucide-react';
+import img89 from '../assets/89secondstuff.jpg';
+import imgLocalLook from '../assets/locallook.png';
+import imgVillage from '../assets/village.png';
 
 const Projects = () => {
   const projectsData = [
@@ -10,7 +13,7 @@ const Projects = () => {
       category: "Mobile Application Developer",
       description: "Aplikasi e-commerce mobile khusus untuk kemitraan thrift store lokal yang dibangun menggunakan Flutter. Dilengkapi fitur live chat real-time antara pengguna dan admin (Supabase), serta caching data lokal yang efisien (Hive).",
       techStack: ["Flutter", "Dart", "Supabase", "Hive"],
-      image: "src/assets/89secondstuff.jpg", 
+      image: img89, 
       link: "#",
       github: "https://github.com/Wickleyy/89Secondstuff_App.git"
     },
@@ -20,7 +23,7 @@ const Projects = () => {
       category: "E-Commerce Web Developer",
       description: "Platform marketplace full-stack yang didedikasikan untuk brand fashion lokal. Proyek ini mengintegrasikan payment gateway Midtrans untuk transaksi digital yang aman, dan dilengkapi dengan dashboard admin komprehensif bagi merchant untuk mengelola inventaris.",
       techStack: ["Laravel", "Tailwind CSS", "Midtrans", "MySQL"],
-      image: "src/assets/locallook.png", 
+      image: imgLocalLook, 
       link: "#",
       github: "https://github.com/Wickleyy/locallook"
     },
@@ -30,7 +33,7 @@ const Projects = () => {
       category: "Web Developer (PMM)",
       description: "Memimpin tim PMM dalam mendigitalisasi desa melalui pengembangan website profil perusahaan menggunakan Native PHP. Sistem ini memiliki CMS khusus yang memungkinkan perangkat desa memperbarui berita dan direktori UMKM tanpa perlu pengetahuan coding.",
       techStack: ["Native PHP", "MySQL", "Custom CMS"],
-      image: "/village.jpg", 
+      image: imgVillage, 
       link: "#",
       github: "#"
     }
