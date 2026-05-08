@@ -5,6 +5,7 @@ import Projects from './sections/Projects';
 import About from './sections/About';
 import Writings from './sections/Writings';
 import Contact from './sections/Contact';
+import fotoProfil from './assets/image.png';
 // import LanguageToggle from './components/LanguageToggle';
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
           <div className="shrink-0 relative">
             <div className="w-40 h-40 md:w-48 md:h-48 rounded-full p-1.5 bg-gradient-to-tr from-blue-400 to-slate-300 shadow-lg">
               <img
-                src="src/assets/profile.png" 
+                src={fotoProfil}
                 alt="Profile Thariq"
                 className="w-full h-full object-cover rounded-full border-4 border-white"
               />
